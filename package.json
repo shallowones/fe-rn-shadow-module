@@ -1,0 +1,52 @@
+{
+  "name": "test-fe-mobile-module",
+  "title": "Test Fe Mobile Module",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "README.md",
+    "android",
+    "index.js",
+    "ios",
+    "test-fe-mobile-module.podspec"
+  ],
+  "scripts": {
+    "build": "npm run build:prod",
+    "build:dev": "npm run lint && cross-env NODE_ENV=DEVELOPMENT webpack --progress",
+    "build:prod": "cross-env npm run lint && cross-env NODE_ENV=PRODUCTION webpack --progress",
+    "lint": "tslint -p ./",
+    "start": "npm run build:dev",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "cross-env META_MODE=ALL npm run build:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github_account/test-fe-mobile-module.git",
+    "baseUrl": "https://github.com/github_account/test-fe-mobile-module"
+  },
+  "keywords": [
+    "testfemobilemodule",
+    "testfemobile"
+  ],
+  "publishConfig": {
+    "registry": "https://nexus.jtc.ooo/repository/npm-dna-hosted"
+  },
+  "author": {
+    "name": "Your Name",
+    "email": "yourname@email.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.60.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "@platform/tools": "1.0.0-develop",
+    "react": "16.13.1",
+    "react-native": "0.63.3"
+  }
+}
