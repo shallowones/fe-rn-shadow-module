@@ -1,16 +1,16 @@
-# test-fe-mobile-module
+# fe-rn-shadow-module
 
 ## Getting started
 
-`$ npm install test-fe-mobile-module --save`
+`$ npm install fe-rn-shadow-module --save`
 
 ### Mostly automatic installation
 
-`$ react-native link test-fe-mobile-module`
+`$ react-native link fe-rn-shadow-module`
 
 ## Usage
 ```javascript
-import TestFeMobileModule from 'test-fe-mobile-module';
+import TestFeMobileModule from 'fe-rn-shadow-module';
 
 // TODO: What to do with the module?
 TestFeMobileModule;

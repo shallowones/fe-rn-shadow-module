@@ -1,13 +1,14 @@
-enum SHOW_TEXT_DURATION {
-  SHORT = 0,
-  LONG = 1,
-}
+import { PropsWithChildren } from 'react'
+import { ViewProps } from 'react-native'
 
-type TConstants = { [key in keyof typeof SHOW_TEXT_DURATION]: typeof SHOW_TEXT_DURATION[key] }
-
-export interface ITestFeMobileModule extends TConstants {
-  sampleMethodWithCallback(stringArgument: string, numberArgument: number, cb: (result: string) => void): void
-  sampleMethodWithPromise(stringArgument: string, numberArgument: number): Promise<string>
-  showText(message: string, duration: SHOW_TEXT_DURATION): void
-  getTextLength(message: string): Promise<number>
+export interface IRNTShadowViewProps extends PropsWithChildren<ViewProps> {
+  borderWidth: number
+  borderColor?: string
+  borderRadius?: number
+  backgroundColor?: string
+  shadowColor?: string
+  shadowOffsetX?: number
+  shadowOffsetY?: number
+  shadowOpacity?: number
+  shadowRadius?: number
 }

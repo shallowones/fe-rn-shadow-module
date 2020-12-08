@@ -1,5 +1,5 @@
 {
-  "name": "test-fe-mobile-module",
+  "name": "fe-rn-shadow-module",
   "title": "Test Fe Mobile Module",
   "version": "1.0.0",
   "description": "TODO",
@@ -10,7 +10,7 @@
     "android",
     "index.js",
     "ios",
-    "test-fe-mobile-module.podspec"
+    "fe-rn-shadow-module.podspec"
   ],
   "scripts": {
     "build": "npm run build:prod",
@@ -23,8 +23,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/test-fe-mobile-module.git",
-    "baseUrl": "https://github.com/github_account/test-fe-mobile-module"
+    "url": "git+https://github.com/github_account/fe-rn-shadow-module.git",
+    "baseUrl": "https://github.com/github_account/fe-rn-shadow-module"
   },
   "keywords": [
     "testfemobilemodule",
@@ -46,6 +46,8 @@
   },
   "devDependencies": {
     "@platform/tools": "1.0.0-develop",
+    "@types/react": "16.9.53",
+    "@types/react-native": "0.63.27",
     "react": "16.13.1",
     "react-native": "0.63.3"
   }

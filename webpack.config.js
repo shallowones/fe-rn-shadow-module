@@ -3,7 +3,7 @@ const { getDefaultConfig, getEnv } = require('@platform/tools/configs')
 
 const config = getDefaultConfig({
   target: 'node',
-  module: '@platform/test-fe-mobile-module',
+  module: '@platform/fe-rn-shadow-module',
   entry: './src/index.ts',
   libraryTarget: 'commonjs2',
   plugins: [new Plugins.IndexDtsGenerator({ folder: '' })],
